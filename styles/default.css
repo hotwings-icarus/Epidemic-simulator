@@ -14,34 +14,24 @@
 /* General body style */
 body {
     font-family: 'Open Sans', sans-serif;
-    color: #ffffff;
-    background: linear-gradient(-45deg, #23a6d5, #23d5ab, #23a6d5, #23d5ab);
+    color: #352b2b;
+    background:  #23d5ab;
 	background-size: 400% 400%;
 	animation: gradient 5s ease infinite;
 }
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
+
 
 /* headers style */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'arial', Arial, Helvetica, sans-serif;
 }
 
 h1 {
     font-weight: 100;
     font-size: 5em;
     margin: 0.2em 0em 0.2em 0em;
-    padding: 0em;
+    padding: 1em;
 }
 
 h2  {
@@ -82,42 +72,36 @@ h2  {
     list-style: none;
     align-items: center;
 }
-/*
-#sirsim-container {
-    width: fit-content;
-    height: fit-content;
-    margin: 10px;
-}*/
+
 #graph-sim-div {
-    width: fit-content;
-    height: fit-content;
+    width: 100%;
+    height: 50%;
     margin: 10px;
 }
 
 #form-div {
-    max-width: fit-content;
-    margin: 10px;
+    max-width: left;
+    margin: 20px;
     flex: 1 1 auto;
 }
 
 .form-legend {
-   align-self: stretch;
+   align-self: left;
    grid-column: span 5;
    /* margin & borders workaround to create bicolor
     * backround. */   
    border-radius: 8px;
    border-bottom-left-radius: 0px;
-   border-bottom-right-radius: 0px;
-   margin: -1rem calc(-1rem + 1px) 0 calc(-1rem + 1px); 
-   background: #f5f5f5;
+   border-bottom-right-radius: 0px; 
+   background: #dfabab;
    padding: 0.5rem 1rem;
 }
 
 /* General forms style */
 form {
-    border: 1px solid #cecece;
-    border-radius: 8px;
-    padding: 1em;    
+    border: 8px solid #ad9595;
+    border-radius: 10px;
+    padding: 6em;    
 }
 
 /* Form elements style */
@@ -145,28 +129,28 @@ form {
 
 .actspan {
     padding-left: 0.5em;
-    text-align: center;
+    text-align: left;
 }
 
 .formbtn-div {
     grid-column: span 5;
     flex-flow: row wrap;
     justify-content: flex-start;
-    margin-left: -1em; /* creates gap between items */
+    margin-left: 1em; /* creates gap between items */
 
 }
 
 /* General inputs style */
 input:focus {
-    outline: none;
+    outline: rgb(65, 192, 65);
 }
 
 /* Input ranges style */
 input[type=range] {
-    margin: 5px 5px 5px 5px;
+    margin: 2px 2px 2px 2px;
     -webkit-appearance: none;
-    height: 5px;
-    border-radius: 5px;  
+    height: 15px;
+    border-radius: 30px;  
     background: #cecece;
     outline: none;
 }
@@ -174,10 +158,10 @@ input[type=range] {
 input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 15px;
     border-radius: 50%; 
-    cursor: pointer;
+    cursor:all-scroll;
 }
 
 #popsize::-webkit-slider-thumb {
@@ -185,38 +169,38 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 #infectionprobability::-webkit-slider-thumb {
-    background: #ff0000;
+    background:black;
 }
 
 #recoverytimeinmillis::-webkit-slider-thumb {
-    background: #00ff00;
+    background: Black;
 }
 
 #speed::-webkit-slider-thumb {
-    background: #ffff00;
+    background: black;
 }
 
 /* Buttons style */
 button {
-    background-color: #cecece;
+    background-color: #494545;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     font-weight: 100;
     width: 6em;
     height: 2rem;
     transition-duration: 0.4s;
     cursor: pointer;
-    margin-left: 1em; /* gap between buttons */
+    margin-left: 5em; /* gap between buttons */
     /* button text */
-    color: #343434;
+    color: #d43a3a;
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;
 }
 
 button:hover {
-    background-color: black;
-    color: #ffffff;
+    background-color: rgb(65, 192, 65);
+    color: #d32f2f;
 }
 
 button:focus {
@@ -225,7 +209,7 @@ button:focus {
 
 /* Canvas style */
 canvas {
-    border-radius: 8px;
+    border-radius: 50px;
 }
 
 /* Link style */
@@ -234,5 +218,5 @@ a {
 }
 
 a:visited {
-    color: black;
+    color: rgb(202, 41, 41);
 }
